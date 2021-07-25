@@ -21,7 +21,7 @@ router.get('/:slug', function(req, res, next) {
   var slug = req.params.slug;
 
   Page.findOne({ slug: slug }, function(err, page) {
-    if (err) 
+    if (err)
       console.log(err);
     if (!page) {
       res.redirect('/');

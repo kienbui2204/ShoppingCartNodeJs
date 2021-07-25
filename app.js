@@ -22,7 +22,7 @@ var session = require('express-session');
 const { body, validationResult } = require('express-validator');
 
 var app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
